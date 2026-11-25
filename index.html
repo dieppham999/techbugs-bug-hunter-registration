@@ -11,22 +11,37 @@
     </header>
 
     <main>
-        <h2>Đăng ký tham gia săn lỗi</h2>
-        Họ và tên:
-        <input type="text" placeholder="Nhập tên"> <br><br>
-        Email liên hệ:
-        <input type="text" placeholder="Nhập email"> <br><br>
-        Mật khẩu hệ thống:
-        <input type="text"> <br><br>
-        Trình độ của bạn:
-        <input type="radio" value="Newbie"> Mới tập chơi
-        <input type="radio" value="Pro"> Chuyên nghiệp
-        <br><br>
-        Kinh nghiệm nền tảng:
-        <input type="checkbox" value="Web"> Web
-        <input type="checkbox" value="Mobile"> Mobile App
-        <br><br>
-        <button>Đăng ký ngay</button>
+
+        <form action="https://bold-tiger-59.webhook.cool" method="GET">
+            <fieldset>
+                <legend style="font-weight: bold;">Đăng ký tham gia săn lỗi</legend>
+                <label for="fullname">Họ và tên:</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Nhập tên" required> <br><br>
+
+                <label for="email">Email liên hệ:</label>
+                <input type="email" name="email" id="email" placeholder="Nhập email" required> <br><br>
+
+                <label for="password">Mật khẩu hệ thống:</label>
+                <input type="password" name="password" id="password" minlength="8" required> <br><br>
+
+                <label for="level">Trình độ của bạn:</label>
+                <input type="radio" name="level" id="level" value="Newbie"> Mới tập chơi
+                <input type="radio" name="level" id="level" value="Pro"> Chuyên nghiệp
+                <br><br>
+
+                <label for="platform">Kinh nghiệm nền tảng:</label>
+                <input type="checkbox" name="platform" id="platform" value="Web"> Web
+                <input type="checkbox" name="platform" id="platform" value="Mobile"> Mobile App
+                <br><br>
+
+                <label for="reason">Lý do tham gia:</label><br>
+                <textarea name="reason" id="reason"></textarea>
+                <br><br>
+            </fieldset>
+            <input type="submit" value="Đăng ký ngay">
+        </form>
+
+        
     </main>
 
     <footer>
