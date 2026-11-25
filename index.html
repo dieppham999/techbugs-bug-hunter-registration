@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechBugs - Bug Hunter Registration</title>
 </head>
 <body>
     <header>
@@ -11,10 +11,10 @@
     </header>
 
     <main>
-
-        <form action="https://bold-tiger-59.webhook.cool" method="GET">
+        <h2>Đăng ký tham gia săn lỗi</h2>
+        <form action="" method="GET">
             <fieldset>
-                <legend style="font-weight: bold;">Đăng ký tham gia săn lỗi</legend>
+                <legend style="font-weight: bold;">Thông tin cá nhân</legend>
                 <label for="fullname">Họ và tên:</label>
                 <input type="text" name="fullname" id="fullname" placeholder="Nhập tên" required> <br><br>
 
@@ -23,18 +23,32 @@
 
                 <label for="password">Mật khẩu hệ thống:</label>
                 <input type="password" name="password" id="password" minlength="8" required> <br><br>
-
-                <label for="level">Trình độ của bạn:</label>
-                <input type="radio" name="level" id="newbie" value="Newbie"> Mới tập chơi
-                <input type="radio" name="level" id="pro" value="Pro"> Chuyên nghiệp
+            </fieldset>
+            <fieldset>
+                <legend>Trình độ của bạn:</legend>
+                <input type="radio" name="level" id="newbie" value="Newbie" required>
+                <label for="newbie">Mới tập chơi</label>
+                
+                <input type="radio" name="level" id="intermediate" value="Intermediate">
+                <label for="intermediate">Trung cấp</label>
+                
+                <input type="radio" name="level" id="pro" value="Pro">
+                <label for="pro">Chuyên nghiệp</label>
                 <br><br>
-
-                <label for="platform">Kinh nghiệm nền tảng:</label>
-                <input type="checkbox" name="platform" id="web" value="Web"> Web
-                <input type="checkbox" name="platform" id="mobile" value="Mobile"> Mobile App
+            </fieldset>
+            <fieldset>
+                <legend>Kinh nghiệm nền tảng:</legend>
+            
+                <input type="checkbox" name="platform" id="web" value="Web">
+                <label for="web">Web</label>
+            
+                <input type="checkbox" name="platform" id="mobile" value="Mobile">
+                <label for="mobile">Mobile App</label>
                 <br><br>
-
-                <label for="reason">Lý do tham gia:</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Lý do tham gia:</legend>
+                <label for="reason">Nhập lý do:</label><br>
                 <textarea name="reason" id="reason"></textarea>
                 <br><br>
             </fieldset>
